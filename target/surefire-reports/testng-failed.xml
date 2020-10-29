@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Command line suite]" verbose="0">
+  <test thread-count="5" name="Command line test(failed)" verbose="0">
+    <classes>
+      <class name="seleniumapi.DragDropTest">
+        <methods>
+          <include name="testDragDrop"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- seleniumapi.DragDropTest -->
+      <class name="seleniumapi.FramesTest">
+        <methods>
+          <include name="testFrameByIndex"/>
+          <include name="testFrameWithIdOrName"/>
+          <include name="testIFrame"/>
+          <include name="setUp"/>
+          <include name="testFrameByContents"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- seleniumapi.FramesTest -->
+      <class name="seleniumapi.AlertsTest">
+        <methods>
+          <include name="testConfirmDismiss"/>
+          <include name="tearDown"/>
+          <include name="testConfirmAccept"/>
+          <include name="testPrompt"/>
+          <include name="testSimpleAlert"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- seleniumapi.AlertsTest -->
+      <class name="seleniumapi.SelectTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testMultipleSelectList"/>
+          <include name="testDropdown"/>
+          <include name="multipleSelectTest"/>
+        </methods>
+      </class> <!-- seleniumapi.SelectTest -->
+      <class name="seleniumapi.WindowPopupTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="testWindowPopup"/>
+          <include name="testWindowPopupUsingContents"/>
+          <include name="testWindowPopupUsingTitle"/>
+        </methods>
+      </class> <!-- seleniumapi.WindowPopupTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

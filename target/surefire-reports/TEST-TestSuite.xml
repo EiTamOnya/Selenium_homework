@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="29" failures="5" name="TestSuite" time="8.081" errors="0" skipped="24">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="14+36-1461"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\jdk-14\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\java\Selenium_homework"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\java\Selenium_homework"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.runtime.version" value="14+36-1461"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\pasho\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Program Files\apache-maven-3.6.3\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\jdk-14\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\Users\pasho\Downloads\geckodriver-v0.26.0-win64\;C:\Program Files\Git\cmd;C:\Program Files\OpenVPN\bin;C:\Program Files\jdk-14\bin;C:\Program Files\apache-maven-3.6.3\bin;C:\Program Files\apache-jmeter-5.3\bin;C:\Program Files (x86)\PICT\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\geckodriver-v0.27.0-win64;;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;%SYSTEMROOT%\System32\OpenSSH\;C:\Users\pasho\AppData\Local\Programs\Python\Python38-32\Scripts\;C:\Users\pasho\AppData\Local\Programs\Python\Python38-32\;C:\Users\pasho\AppData\Local\Microsoft\WindowsApps;C:\Users\pasho\AppData\Roaming\npm;C:\Users\pasho\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\heroku\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.1.4\bin;;C:\Users\pasho\AppData\Local\hyper\app-3.0.2\resources\bin;C:\Program Files\geckodriver-v0.27.0-win64\geckodriver.exe;;."/>
+    <property name="maven.conf" value="C:\Program Files\apache-maven-3.6.3\bin\../conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="58.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\Program Files\apache-maven-3.6.3\bin\..\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\pasho"/>
+    <property name="user.timezone" value="Europe/Sofia"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.specification.version" value="14"/>
+    <property name="user.name" value="pasho"/>
+    <property name="java.class.path" value="C:\Program Files\apache-maven-3.6.3\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="14"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean verify"/>
+    <property name="java.home" value="C:\Program Files\jdk-14"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="14"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
+    <property name="maven.home" value="C:\Program Files\apache-maven-3.6.3\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2020-03-17"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="seleniumapi.AlertsTest" name="setUp" time="0.257">
+    <failure message="The driver executable does not exist: C:\webdrivers\chromedriver.exe" type="java.lang.IllegalStateException">java.lang.IllegalStateException: The driver executable does not exist: C:\webdrivers\chromedriver.exe
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:137)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:132)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:156)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:346)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:91)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at seleniumapi.AlertsTest.setUp(AlertsTest.java:20)
+</failure>
+    <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@71e7a66b
+</system-out>
+  </testcase>
+  <testcase classname="seleniumapi.AlertsTest" name="testConfirmAccept" time="0.263">
+    <skipped/>
+  </testcase>
+  <testcase classname="seleniumapi.AlertsTest" name="testConfirmDismiss" time="0.264">
+    <skipped/>
+  </testcase>
+  <testcase classname="seleniumapi.AlertsTest" name="testPrompt" time="0.264">
+    <skipped/>
+  </testcase>
+  <testcase classname="seleniumapi.AlertsTest" name="testSimpleAlert" time="0.264">
+    <skipped/>
+  </testcase>
+  <testcase classname="seleniumapi.AlertsTest" name="tearDown" time="0.265">
+    <skipped/>
+  </testcase>
+  <testcase classname="seleniumapi.DragDropTest" name="setUp" time="0.273">
+    <failure message="The driver executable does not exist: C:\webdrivers\chromedriver.exe" type="java.lang.IllegalStateException">java.lang.IllegalStateException: The driver executable does not exist: C:\webdrivers\chromedriver.exe
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:137)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:132)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:156)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:346)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:91)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at seleniumapi.DragDropTest.setUp(DragDropTest.java:21)
+</failure>
+  </testcase>
+  <testcase classname="seleniumapi.DragDropTest" name="testDragDrop" time="0.273">
+    <skipped/>
+  </testcase>
+  <testcase classname="seleniumapi.DragDropTest" name="tearDown" time="0.273">
+    <skipped/>
+  </testcase>
+  <testcase classname="seleniumapi.FramesTest" name="setUp" time="0.278">
+    <failure message="The driver executable does not exist: C:\webdrivers\chromedriver.exe" type="java.lang.IllegalStateException">java.lang.IllegalStateException: The driver executable does not exist: C:\webdrivers\chromedriver.exe
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:137)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:132)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:156)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:346)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:91)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at seleniumapi.FramesTest.setUp(FramesTest.java:25)
+</failure>
+  </testcase>
+  <testcase classname="seleniumapi.FramesTest" name="testFrameByContents" time="0.278">
+    <skipped/>
+  </testcase>
+  <testcase classname="seleniumapi.FramesTest" name="testFrameByIndex" time="0.278">
+    <skipped/>
+  </testcase>
+  <testcase classname="seleniumapi.FramesTest" name="testFrameWithIdOrName" time="0.278">
+    <skipped/>
+  </testcase>
+  <testcase classname="seleniumapi.FramesTest" name="testIFrame" time="0.279">
+    <skipped/>
+  </testcase>
+  <testcase classname="seleniumapi.FramesTest" name="tearDown" time="0.279">
+    <skipped/>
+  </testcase>
+  <testcase classname="seleniumapi.SelectTest" name="setUp" time="0.285">
+    <failure message="The driver executable does not exist: C:\webdrivers\chromedriver.exe" type="java.lang.IllegalStateException">java.lang.IllegalStateException: The driver executable does not exist: C:\webdrivers\chromedriver.exe
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:137)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:132)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:156)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:346)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:91)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at seleniumapi.SelectTest.setUp(SelectTest.java:28)
+</failure>
+  </testcase>
+  <testcase classname="seleniumapi.SelectTest" name="multipleSelectTest" time="0.285">
+    <skipped/>
+  </testcase>
+  <testcase classname="seleniumapi.SelectTest" name="tearDown" time="0.285">
+    <skipped/>
+  </testcase>
+  <testcase classname="seleniumapi.SelectTest" name="setUp" time="0.285">
+    <skipped/>
+  </testcase>
+  <testcase classname="seleniumapi.SelectTest" name="testDropdown" time="0.285">
+    <skipped/>
+  </testcase>
+  <testcase classname="seleniumapi.SelectTest" name="tearDown" time="0.285">
+    <skipped/>
+  </testcase>
+  <testcase classname="seleniumapi.SelectTest" name="setUp" time="0.285">
+    <skipped/>
+  </testcase>
+  <testcase classname="seleniumapi.SelectTest" name="testMultipleSelectList" time="0.285">
+    <skipped/>
+  </testcase>
+  <testcase classname="seleniumapi.SelectTest" name="tearDown" time="0.285">
+    <skipped/>
+  </testcase>
+  <testcase classname="seleniumapi.WindowPopupTest" name="setUp" time="0.29">
+    <failure message="The driver executable does not exist: C:\webdrivers\chromedriver.exe" type="java.lang.IllegalStateException">java.lang.IllegalStateException: The driver executable does not exist: C:\webdrivers\chromedriver.exe
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:137)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:132)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:156)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:346)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:91)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at seleniumapi.WindowPopupTest.setUp(WindowPopupTest.java:26)
+</failure>
+  </testcase>
+  <testcase classname="seleniumapi.WindowPopupTest" name="testWindowPopup" time="0.29">
+    <skipped/>
+  </testcase>
+  <testcase classname="seleniumapi.WindowPopupTest" name="testWindowPopupUsingContents" time="0.29">
+    <skipped/>
+  </testcase>
+  <testcase classname="seleniumapi.WindowPopupTest" name="testWindowPopupUsingTitle" time="0.29">
+    <skipped/>
+  </testcase>
+  <testcase classname="seleniumapi.WindowPopupTest" name="tearDown" time="0.29">
+    <skipped/>
+  </testcase>
+</testsuite>
