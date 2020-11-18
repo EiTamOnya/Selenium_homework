@@ -18,6 +18,7 @@ public class FinalExam {
     private static final String password = "123456789";
     private static final String registerPage = "Register Account";
     private static final String successPage = "Your Account Has Been Created!";
+    private static final String warningMessage = "Warning: E-Mail Address is already registered!";
 
 
     @BeforeClass
@@ -39,9 +40,9 @@ public class FinalExam {
         Homepage.goTo();
         Homepage.goToRegisterPage();
         Register.checksPageTitle(registerPage);
-        Register.fillRegisterForm(firstName,lastName,usedMail,phone,password,true);
+        Register.fillRegisterForm("","","","","",true);
         Register.checksPageTitle(registerPage);
-        Register.checkAlertReviewMessage("Warning: E-Mail Address is already registered!");
+        Register.checkInputFields();
     }
 
     @AfterClass
