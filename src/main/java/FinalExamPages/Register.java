@@ -3,9 +3,10 @@ package FinalExamPages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import utils.Browser;
-
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import static org.testng.Assert.*;
 
 public class Register {
     private static final By LOC_INPUT_FIRSTNAME = By.id("input-firstname");
@@ -19,6 +20,7 @@ public class Register {
     private static final By LOC_BTN_CONTINUE = By.cssSelector("input.btn[value='Continue']");
     private static final By LOC_FORM_NAME = By.cssSelector("#content h1");
     private static final By LOC_REVIEW_ALERT = By.cssSelector(".alert");
+    private static final By LOC_FAILED_INPUT = By.cssSelector(".text-danger");
 
     /**
      * Method checks if this is the correct page
@@ -73,7 +75,9 @@ public class Register {
             assertEquals(radioYes.findElement(By.xpath("./..")).getText(), "Yes");
             radioYes.click();
         }
-        Browser.driver.findElement(LOC_CHECKBOX).click();
+        WebElement checkbox = Browser.driver.findElement(LOC_CHECKBOX);
+        assertTrue(checkbox.findElement(By.xpath("./..")).getText().contains("Privacy Policy"));
+        checkbox.click();
 
         WebElement continueBTN = Browser.driver.findElement(LOC_BTN_CONTINUE);
         assertEquals(continueBTN.getAttribute("value"), "Continue");
@@ -108,5 +112,19 @@ public class Register {
             sb.append(lettersNumbers.charAt(index));
         }
         return sb.toString() + "@validmail.int";
+    }
+
+    public static void checkInputFields(){
+        List<WebElement> failedInputs = Browser.driver.findElements(LOC_FAILED_INPUT);
+        List<String> expectedText = Arrays.asList("First Name must be between 1 and 32 characters!",
+        "Last Name must be between 1 and 32 characters!","E-Mail Address does not appear to be valid!",
+        "Telephone must be between 3 and 32 characters!","Password must be between 4 and 20 characters!");
+
+        List<String> actualText = new ArrayList<String>();
+
+        for (WebElement input : failedInputs){
+            actualText.add(input.getText());
+        }
+        assertEquals(actualText.toArray(), expectedText.toArray());
     }
 }
